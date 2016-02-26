@@ -1,4 +1,6 @@
-# hierarchize(1) - hierarchize the node_modules distribution of your project
+# hierarchize(1)
+
+> hierarchize the node_modules distribution of your project
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
