@@ -1,6 +1,6 @@
 {
   "name": "hierarchize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "hierarchize the node_modules distrubution of your project",
   "main": "index.js",
   "scripts": {
