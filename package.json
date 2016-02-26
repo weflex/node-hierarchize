@@ -1,10 +1,10 @@
 {
   "name": "hierarchize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "hierarchize the node_modules distrubution of your project",
   "main": "index.js",
   "scripts": {
-    "prepublish": "./cli.js ./ --dev"
+    "build": "./cli.js ./ --dev"
   },
   "bin": {
     "hierarchize": "./cli.js",
