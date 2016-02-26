@@ -1,5 +1,10 @@
 # hierarchize(1) - hierarchize the node_modules distribution of your project
 
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Dependency Status][david-image]][david-url]
+[![Downloads][downloads-image]][downloads-url]
+
 ## Why this tool
 
 The npm3 would do flat the node_modules and doesnt support nested feature 
@@ -55,3 +60,12 @@ $ npm install hierarchize -g
 ## License
 
 MIT Licensed @ WeFlex, Org.
+
+[npm-image]: https://img.shields.io/npm/v/hierarchize.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/hierarchize
+[travis-image]: https://img.shields.io/travis/weflex/node-hierarchize.svg?style=flat-square
+[travis-url]: https://travis-ci.org/weflex/node-hierarchize
+[david-image]: http://img.shields.io/david/weflex/node-hierarchize.svg?style=flat-square
+[david-url]: https://david-dm.org/weflex/node-hierarchize
+[downloads-image]: http://img.shields.io/npm/dm/hierarchize.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/hierarchize

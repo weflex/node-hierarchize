@@ -28,6 +28,7 @@
   "homepage": "https://github.com/weflex/node-hierarchize#readme",
   "dependencies": {
     "async": "^1.5.2",
+    "minimist": "^1.2.0",
     "npm-registry-client": "^7.1.0",
     "semver": "^5.1.0"
   }
