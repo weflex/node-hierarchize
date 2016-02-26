@@ -1,0 +1,34 @@
+{
+  "name": "hierarchize",
+  "version": "1.0.0",
+  "description": "hierarchize the node_modules distrubution of your project",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "./cli.js ./ --dev"
+  },
+  "bin": {
+    "hierarchize": "./cli.js",
+    "nest-your-node-modules": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/weflex/node-hierarchize.git"
+  },
+  "keywords": [
+    "hierarchize",
+    "node_modules",
+    "nested",
+    "nest"
+  ],
+  "author": "Yorkie Liu <yorkiefixer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weflex/node-hierarchize/issues"
+  },
+  "homepage": "https://github.com/weflex/node-hierarchize#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "npm-registry-client": "^7.1.0",
+    "semver": "^5.1.0"
+  }
+}

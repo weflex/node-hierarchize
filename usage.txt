@@ -1,0 +1,12 @@
+
+hierarchize(1) - hierarchize the node_modules distribution in your project
+
+Usage:
+
+  hierarchize [project path]
+
+Options:
+
+  -d | --dev        : contains devDependencies
+  -h | -? | --help  : print help
+
