@@ -7,7 +7,7 @@ const options = {
   dev: argv.dev || argv.d
 };
 if (!prefix || argv['?'] || argv['h'] || argv['help']) {
-  fs.createReadStream('./usage.txt').pipe(process.stdout);
+  fs.createReadStream(__dirname + './usage.txt').pipe(process.stdout);
   return;
 }
 

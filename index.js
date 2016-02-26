@@ -32,7 +32,7 @@ function hierarchize (prefix, options) {
 
   let deps = pkgInfo.dependencies || {};
   if (options.dev && Object.keys(pkgInfo.devDependencies || {}).length > 0) {
-    deps = deps.concat(pkgInfo.devDependencies);
+    deps = Object.assign(deps, pkgInfo.devDependencies);
   }
   request(pkgInfo.name, pkgInfo.version, deps, (err, results) => {
     fs.writeFileSync(
@@ -51,8 +51,11 @@ function hierarchize (prefix, options) {
             token,
           }
         }, (err, data, raw, res) => {
+          if (err) {
+            throw err;
+          }
           const range = deps[name];
-          const expect = semver.maxSatisfying(Object.keys(data.versions), range);
+          const expect = semver.maxSatisfying(Object.keys(data.versions || {}), range);
           const subPkg = data.versions[expect];
           if (!subPkg) {
             done(null);
